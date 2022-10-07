@@ -10,11 +10,31 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
+    var orientationLock = UIInterfaceOrientationMask.portrait
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        self.setInitRootViewController()
         return true
+    }
+    
+    
+    // MARK: ViewController
+    func setInitRootViewController() {
+        let iOSVersion = ProcessInfo().operatingSystemVersion.majorVersion
+        if iOSVersion < 13 { // iOS version < 13.0.0
+            // Facebook
+            let frame = UIScreen.main.bounds
+            let windowSize = CGSize(width: min(frame.width, frame.height), height: max(frame.width, frame.height))
+            window = UIWindow(frame: CGRect(origin: .zero, size: windowSize))
+            let rootController = SplashScreenRouter.setupModule()
+            window?.rootViewController = rootController
+            window?.makeKeyAndVisible()
+        }
+    }
+    
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        return self.orientationLock
     }
 
     // MARK: UISceneSession Lifecycle
