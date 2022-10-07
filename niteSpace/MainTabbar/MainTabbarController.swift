@@ -41,7 +41,7 @@ class MainTabbarController: UITabBarController {
         let verticalSize: CGFloat = -1 // -3.0
         
         //Tin tức
-        let feedController = ViewController()
+        let feedController = NewsFeedRouter.setupModule()
         
         feedController.tabBarItem.tag = 0
         feedController.tabBarItem.title  = "Tin Tức"
@@ -50,12 +50,26 @@ class MainTabbarController: UITabBarController {
         feedController.tabBarItem.image = UIImage(named: "")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         feedController.tabBarItem.selectedImage = UIImage(named: "")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
         let feedNavController = BaseNavigationController(rootViewController: feedController)
-        feedController.navigationItem.backBarButtonItem = UIBarButtonItem(title: String(), style: .plain, target: nil, action: nil)
+        feedNavController.navigationItem.backBarButtonItem = UIBarButtonItem(title: String(), style: .plain, target: nil, action: nil)
         feedNavController.setHiddenNavigationBarViewControllers([])
+        
+        //Tin tức
+        let xxxController = LoginRouter.setupModule()
+        
+        xxxController.tabBarItem.tag = 0
+        xxxController.tabBarItem.title  = "Tin Tức tesst"
+        xxxController.tabBarItem.titlePositionAdjustment = UIOffset(horizontal: 0, vertical: verticalSize)
+        xxxController.tabBarItem.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        xxxController.tabBarItem.image = UIImage(named: "")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        xxxController.tabBarItem.selectedImage = UIImage(named: "")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        let xxxNavController = BaseNavigationController(rootViewController: xxxController)
+        xxxNavController.navigationItem.backBarButtonItem = UIBarButtonItem(title: String(), style: .plain, target: nil, action: nil)
+        xxxNavController.setHiddenNavigationBarViewControllers([])
         
         // MARK:  Add Tabbar
         self.viewControllers = [
-            feedController
+            feedNavController,
+            xxxNavController
         ]
     }
 }

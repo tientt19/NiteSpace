@@ -11,7 +11,7 @@ import UIKit
 
 // MARK: - RouterProtocol
 protocol SplashScreenRouterProtocol {
-
+    func goToNewsFeedScreen() 
 }
 
 // MARK: - SplashScreen Router
@@ -36,5 +36,9 @@ class SplashScreenRouter {
 
 // MARK: - SplashScreen RouterProtocol
 extension SplashScreenRouter: SplashScreenRouterProtocol {
-    
+    func goToNewsFeedScreen() {
+        let controller = MainTabbarController()
+        controller.modalPresentationStyle = .fullScreen
+        self.viewController?.present(controller, animated: true,completion: nil)
+    }
 }

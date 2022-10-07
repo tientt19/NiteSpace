@@ -10,8 +10,6 @@
 		B0DD373B988738E2258CC83B /* Pods_niteSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C04AEC2532D87C9AA4DF9D2E /* Pods_niteSpace.framework */; };
 		FF9A652C28F0127100D98D00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A652B28F0127100D98D00 /* AppDelegate.swift */; };
 		FF9A652E28F0127100D98D00 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A652D28F0127100D98D00 /* SceneDelegate.swift */; };
-		FF9A653028F0127100D98D00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A652F28F0127100D98D00 /* ViewController.swift */; };
-		FF9A653328F0127100D98D00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9A653128F0127100D98D00 /* Main.storyboard */; };
 		FF9A653528F0127200D98D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF9A653428F0127200D98D00 /* Assets.xcassets */; };
 		FF9A653828F0127200D98D00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF9A653628F0127200D98D00 /* LaunchScreen.storyboard */; };
 		FF9A658328F015BF00D98D00 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A656E28F015BF00D98D00 /* Date.swift */; };
@@ -101,6 +99,11 @@
 		FF9A664428F01AE900D98D00 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A663F28F01AE900D98D00 /* SplashScreenViewController.swift */; };
 		FF9A664528F01AE900D98D00 /* SplashScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A664028F01AE900D98D00 /* SplashScreenViewModel.swift */; };
 		FF9A664628F01AE900D98D00 /* SplashScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9A664128F01AE900D98D00 /* SplashScreenViewController.xib */; };
+		FF9A664D28F01D9700D98D00 /* NewsFeedRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A664828F01D9700D98D00 /* NewsFeedRouter.swift */; };
+		FF9A664E28F01D9700D98D00 /* NewsFeedInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A664928F01D9700D98D00 /* NewsFeedInteractorInput.swift */; };
+		FF9A664F28F01D9700D98D00 /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A664A28F01D9700D98D00 /* NewsFeedViewController.swift */; };
+		FF9A665028F01D9700D98D00 /* NewsFeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9A664B28F01D9700D98D00 /* NewsFeedViewModel.swift */; };
+		FF9A665128F01D9700D98D00 /* NewsFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF9A664C28F01D9700D98D00 /* NewsFeedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,8 +113,6 @@
 		FF9A652828F0127100D98D00 /* niteSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = niteSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF9A652B28F0127100D98D00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF9A652D28F0127100D98D00 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF9A652F28F0127100D98D00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF9A653228F0127100D98D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF9A653428F0127200D98D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF9A653728F0127200D98D00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF9A653928F0127200D98D00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -202,6 +203,11 @@
 		FF9A663F28F01AE900D98D00 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		FF9A664028F01AE900D98D00 /* SplashScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewModel.swift; sourceTree = "<group>"; };
 		FF9A664128F01AE900D98D00 /* SplashScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashScreenViewController.xib; sourceTree = "<group>"; };
+		FF9A664828F01D9700D98D00 /* NewsFeedRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedRouter.swift; sourceTree = "<group>"; };
+		FF9A664928F01D9700D98D00 /* NewsFeedInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedInteractorInput.swift; sourceTree = "<group>"; };
+		FF9A664A28F01D9700D98D00 /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		FF9A664B28F01D9700D98D00 /* NewsFeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewModel.swift; sourceTree = "<group>"; };
+		FF9A664C28F01D9700D98D00 /* NewsFeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsFeedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,8 +272,6 @@
 				FF9A662228F019F600D98D00 /* ViewController */,
 				FF9A652B28F0127100D98D00 /* AppDelegate.swift */,
 				FF9A652D28F0127100D98D00 /* SceneDelegate.swift */,
-				FF9A652F28F0127100D98D00 /* ViewController.swift */,
-				FF9A653128F0127100D98D00 /* Main.storyboard */,
 				FF9A653428F0127200D98D00 /* Assets.xcassets */,
 				FF9A653628F0127200D98D00 /* LaunchScreen.storyboard */,
 				FF9A653928F0127200D98D00 /* Info.plist */,
@@ -320,8 +324,8 @@
 		FF9A659628F0161D00D98D00 /* MainTabbar */ = {
 			isa = PBXGroup;
 			children = (
-				FF9A659728F0161D00D98D00 /* MainTabbarController.xib */,
 				FF9A659828F0161D00D98D00 /* MainTabbarController.swift */,
+				FF9A659728F0161D00D98D00 /* MainTabbarController.xib */,
 			);
 			path = MainTabbar;
 			sourceTree = "<group>";
@@ -573,6 +577,7 @@
 		FF9A662228F019F600D98D00 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				FF9A664728F01D7E00D98D00 /* NewsFeed */,
 				FF9A663C28F01AD800D98D00 /* SplashScreen */,
 				FF9A662E28F01A1D00D98D00 /* Feed */,
 				FF9A662328F01A0500D98D00 /* Login */,
@@ -622,6 +627,18 @@
 				FF9A664128F01AE900D98D00 /* SplashScreenViewController.xib */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		FF9A664728F01D7E00D98D00 /* NewsFeed */ = {
+			isa = PBXGroup;
+			children = (
+				FF9A664828F01D9700D98D00 /* NewsFeedRouter.swift */,
+				FF9A664928F01D9700D98D00 /* NewsFeedInteractorInput.swift */,
+				FF9A664A28F01D9700D98D00 /* NewsFeedViewController.swift */,
+				FF9A664B28F01D9700D98D00 /* NewsFeedViewModel.swift */,
+				FF9A664C28F01D9700D98D00 /* NewsFeedViewController.xib */,
+			);
+			path = NewsFeed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -685,13 +702,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FF9A65A628F017A800D98D00 /* BackgroundView.xib in Resources */,
+				FF9A665128F01D9700D98D00 /* NewsFeedViewController.xib in Resources */,
 				FF9A664628F01AE900D98D00 /* SplashScreenViewController.xib in Resources */,
 				FF9A653828F0127200D98D00 /* LaunchScreen.storyboard in Resources */,
 				FF9A663828F01A2E00D98D00 /* FeedViewController.xib in Resources */,
 				FF9A662D28F01A1400D98D00 /* LoginViewController.xib in Resources */,
 				FF9A653528F0127200D98D00 /* Assets.xcassets in Resources */,
 				FF9A659928F0161D00D98D00 /* MainTabbarController.xib in Resources */,
-				FF9A653328F0127100D98D00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,7 +772,6 @@
 				FF9A65F828F0190800D98D00 /* PanModalAnimator.swift in Sources */,
 				FF9A664528F01AE900D98D00 /* SplashScreenViewModel.swift in Sources */,
 				FF9A661C28F019B900D98D00 /* BaseService.swift in Sources */,
-				FF9A653028F0127100D98D00 /* ViewController.swift in Sources */,
 				FF9A652C28F0127100D98D00 /* AppDelegate.swift in Sources */,
 				FF9A65A528F017A800D98D00 /* InterfaceRepresentable.swift in Sources */,
 				FF9A661928F019B900D98D00 /* APIError.swift in Sources */,
@@ -765,6 +781,7 @@
 				FF9A658628F015BF00D98D00 /* UIView.swift in Sources */,
 				FF9A65EC28F0190800D98D00 /* Network.swift in Sources */,
 				FF9A65EE28F0190800D98D00 /* VXPageItem.swift in Sources */,
+				FF9A665028F01D9700D98D00 /* NewsFeedViewModel.swift in Sources */,
 				FF9A65BC28F0185800D98D00 /* Utils.swift in Sources */,
 				FF9A661D28F019B900D98D00 /* ApiUrlProtocols.swift in Sources */,
 				FF9A65A828F017A800D98D00 /* BaseNavigationController.swift in Sources */,
@@ -775,12 +792,15 @@
 				FF9A661A28F019B900D98D00 /* Log.swift in Sources */,
 				FF9A65B128F017D700D98D00 /* Constant.swift in Sources */,
 				FF9A660328F0190800D98D00 /* PushNotiModel.swift in Sources */,
+				FF9A664D28F01D9700D98D00 /* NewsFeedRouter.swift in Sources */,
+				FF9A664E28F01D9700D98D00 /* NewsFeedInteractorInput.swift in Sources */,
 				FF9A660028F0190800D98D00 /* CloseButton.swift in Sources */,
 				FF9A663728F01A2E00D98D00 /* FeedViewModel.swift in Sources */,
 				FF9A660728F0190800D98D00 /* InternetConnection.swift in Sources */,
 				FF9A664328F01AE900D98D00 /* SplashScreenInteractorInput.swift in Sources */,
 				FF9A663628F01A2E00D98D00 /* FeedViewController.swift in Sources */,
 				FF9A65F428F0190800D98D00 /* PanModalPresentable+UIViewController.swift in Sources */,
+				FF9A664F28F01D9700D98D00 /* NewsFeedViewController.swift in Sources */,
 				FF9A65FF28F0190800D98D00 /* SkeletonView.swift in Sources */,
 				FF9A658428F015BF00D98D00 /* UICollectionViewLayout.swift in Sources */,
 				FF9A661628F019B900D98D00 /* ServiceAPI.swift in Sources */,
@@ -835,14 +855,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FF9A653128F0127100D98D00 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF9A653228F0127100D98D00 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FF9A653628F0127200D98D00 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -979,16 +991,17 @@
 				DEVELOPMENT_TEAM = CY4CXRJ4H3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = niteSpace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NiteSpace;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.nite.niteSpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1008,16 +1021,17 @@
 				DEVELOPMENT_TEAM = CY4CXRJ4H3;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = niteSpace/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = NiteSpace;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.nite.niteSpace;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

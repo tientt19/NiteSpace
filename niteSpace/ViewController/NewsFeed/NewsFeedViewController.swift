@@ -1,6 +1,6 @@
 //
 //  
-//  SplashScreenViewController.swift
+//  NewsFeedViewController.swift
 //  niteSpace
 //
 //  Created by Tiến Trần on 07/10/2022.
@@ -10,7 +10,7 @@
 import UIKit
 
 // MARK: - ViewProtocol
-protocol SplashScreenViewProtocol: AnyObject {
+protocol NewsFeedViewProtocol: AnyObject {
     func showHud()
     func hideHud()
     
@@ -18,10 +18,10 @@ protocol SplashScreenViewProtocol: AnyObject {
     //func onReloadData()
 }
 
-// MARK: - SplashScreen ViewController
-class SplashScreenViewController: BaseViewController {
-    var router: SplashScreenRouterProtocol!
-    var viewModel: SplashScreenViewModelProtocol!
+// MARK: - NewsFeed ViewController
+class NewsFeedViewController: BaseViewController {
+    var router: NewsFeedRouterProtocol!
+    var viewModel: NewsFeedViewModelProtocol!
     
     
     
@@ -34,15 +34,15 @@ class SplashScreenViewController: BaseViewController {
     
     // MARK: - Init
     private func setupInit() {
-        self.router.goToNewsFeedScreen()
+
     }
     
     // MARK: - Action
     
 }
 
-// MARK: - SplashScreen ViewProtocol
-extension SplashScreenViewController: SplashScreenViewProtocol {
+// MARK: - NewsFeed ViewProtocol
+extension NewsFeedViewController: NewsFeedViewProtocol {
     func showHud() {
         self.showProgressHud()
     }
